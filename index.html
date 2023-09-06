@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/mark-pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>My Profile Page</title>
+</head>
+
+<body>
+    <div class="starting">
+        <div class="navbar-container">
+            <div class="full-nav flexed">
+                <div class="navLeft-container">
+                    <video src="./smoke.mp4" alt="smoke video" autoplay muted></video>
+
+                    <h1>
+                        <span>G</span>
+                        <span>a</span>
+                        <span>r</span>
+                        <span>y</span>
+                        <span>M</span>
+                        <span>a</span>
+                        <span>g</span>
+                        <span>i</span>
+                        <span>l</span>
+                        <span>l</span>
+                    </h1>
+                </div>
+                <div class="navRight">
+                    <ul id="nav-links" class="rightNav">
+                        <a>
+                            <li href="#education">Education</li>
+                        </a>
+                        <a>
+                            <li href="#skills">Skills</li>
+                        </a>
+                        <a>
+                            <li href="#projects">Projects</li>
+                        </a>
+                        <a>
+                            <li href="#contact">Contact</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="slogan-container">
+            <p class="slogan">transforming innovative concepts</p>
+            <p class="slogan1">into tangible <span id="solution-text">software solutions.</span></p>
+        </div>
+
+    </div>
+    <div class="mainpage-container">
+        <div class="card-container1 flexed">
+            <div class="ab-card-farLeft flexed">
+                <p id="cardTitle">About Me</p>
+            </div>
+            <div class="card-middle flexed">
+                <a><img onmouseover="setNewImg()" onmouseout="setOldImg()" id="garyImg"
+                        src="./Gary Profile Page Pic.png" alt="Gary picture"></a>
+            </div>
+            <div class="card-right flexed">
+                <p class="about-right">I'm a Full Stack Web Developer based in Denver, CO with a unique background in
+                    diesel
+                    mechanics. After spending 15 years as a diesel technician, I decided to pursue my passion for
+                    web
+                    design and technology. I've always been fascinated by how things work under the hood, and that
+                    curiosity has driven me to become a skilled problem solver. Now, as a software developer, I
+                    bring
+                    that problem-solving experience to every project I work on. I love the challenge of taking an
+                    idea
+                    and turning it into a tangible product that people can use and enjoy. Outside of coding you can
+                    usually find me on the golf course, in the mountains Snowboarding or hiking with my dogs.</p>
+            </div>
+        </div>
+        <div id="education" class="card-container2 flexed">
+            <div class="card-middle">
+                <a><img class="DojoImg" src="./Coding_Dojo_Img.png" alt="Coding Dojo Logo"></a>
+            </div>
+            <div class="card-right">
+                <!-- <p class="edu-header">-CodingDojo Bootcamp-</p> -->
+                <p class="edu-right">After thorough research, I made a decision to join an immersive coding bootcamp
+                    at
+                    Coding Dojo. Coding Dojo's comprehensive curriculum covers multiple coding languages and stacks,
+                    including front-end, back-end, and full-stack development. Programming languages I learned
+                    include
+                    Python, JavaScript and C#. In addition to programming languages, I learned alot about frameworks
+                    and
+                    tools such as Node.js, React, Django and Angular as well as databases such as SQL and NoSQL. At
+                    the
+                    end of the 16 weeks I will have experience in three full technology stacks such as: the MERN
+                    stack
+                    (MongoDB, Express, React, and Node.js), and the Java stack.</p>
+
+            </div>
+            <div class="ab-card-farLeft flexed">
+                <p>Education</p>
+            </div>
+        </div>
+        <div id="skills" class="card-container1 flexed">
+            <div class="ab-card-farLeft flexed">
+                <p id="cardTitle">Skills</p>
+            </div>
+            <div class="skills-card flexed">
+                <a><img id="language-icon" src="./HTMLCSSJS.png" alt="html,js,css icons"></a>
+                <a><img id="jquery-icon" src="./52450.png" alt="jquery icon"></a>
+            </div>
+            <div class="card-right flexed">
+                <p class="about-right"></p>
+            </div>
+        </div>
+        <div id="projects" class="card-container2 flexed">
+            <div class="card-middle">
+                <a><img class="projects" src="" alt="Coding Dojo Logo"></a>
+            </div>
+            <div class="card-right">
+                <!-- <p class="edu-header">-CodingDojo Bootcamp-</p> -->
+                <p class="edu-right">After thorough research, I made a decision to join an immersive coding bootcamp
+                    at
+                    Coding Dojo. Coding Dojo's comprehensive curriculum covers multiple coding languages and stacks,
+                    including front-end, back-end, and full-stack development. Programming languages I learned
+                    include
+                    Python, JavaScript and C#. In addition to programming languages, I learned alot about frameworks
+                    and
+                    tools such as Node.js, React, Django and Angular as well as databases such as SQL and NoSQL. At
+                    the
+                    end of the 16 weeks I will have experience in three full technology stacks such as: the MERN
+                    stack
+                    (MongoDB, Express, React, and Node.js), and the Java stack.</p>
+
+            </div>
+            <div class="ab-card-farLeft flexed">
+                <p>Projects</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- My coding bootcamp training
+After thorough reflections, I made a decision to join an immersive coding bootcamp at Coding Dojo. During 15 weeks of my bootcamp period, I intensively coded, searched, read, and coded more. It was such an incredible learning experience for me that I would love to join or organize an immersive coding training opportunity in the future. This is what my bootcamp experience looks like: -->
+
+<!-- https://www.adeolaadeoti.xyz/ -->
+<!-- https://tamalsen.dev/ -->
+
+
+<!-- I'm a software developer based in Denver, CO with a unique background in diesel mechanics. After spending 15 years as a diesel technician, I decided to pursue my passion for web design and technology. I've always been fascinated by how things work under the hood, and that curiosity has driven me to become a skilled problem solver. Now, as a software developer, I bring that problem-solving experience to every project I work on. I love the challenge of taking an idea and turning it into a tangible product that people can use and enjoy. Outside of coding you can usually find me on the golf course, in the mountains Snowboarding or hiking with my dogs.
+
+
+<!-  <span >software solutions.</span></p> 
+
+
+
+
+<video classs="video" src="./smoke.mp4" alt="smoke video" autoplay muted></video>
+
+
+-->

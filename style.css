@@ -1,0 +1,309 @@
+@import url('https://fonts.cdnfonts.com/css/mark-pro');
+
+* {
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    /* border: .5px dotted red */
+}
+
+body {
+    background-color: black;
+    /* font-family: 'Circular Std Book', sans-serif; */
+    
+}
+.flexed {
+    display: flex;
+}
+
+
+.navbar-container {
+    font-family: 'Circular Std Book', sans-serif;
+    color: white;
+    padding: .1rem 2rem;
+    border-radius: 3rem;
+    border: 0.2rem solid #2a2b37;
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 10px;
+    
+}
+    /* width: 100%; */
+    /* height: 100%; */
+    /* overflow: hidden;
+/* 
+.navbar-container {
+    border-radius: 3rem;
+    border: 0.2rem solid #e52ac3;
+    height: 100px;
+    width: 300px;
+}  */
+
+.full-nav {
+    height: 60px;
+    /* padding: 20px; */
+    
+
+}
+
+
+
+
+h1 {
+
+    padding-left: 10px;
+    transform: translateY(-50%);
+    width: 100%;
+    letter-spacing: .1em;
+    color: #fff;
+
+    
+}
+
+
+video {
+    /* padding-bottom: 10px; */
+    object-fit: cover;
+    width: 100%;
+    height: 60px;
+
+}
+
+
+h1 span {
+    margin-bottom: 75px;
+    opacity: 0;
+    font-size: 1.0em;
+    font-family: 'Mark Pro', sans-serif;
+    display: inline-block;
+    animation: smoke 1s linear forwards;
+    cursor: pointer;
+
+}
+@keyframes smoke {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    } 
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0)
+    }
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(2) {
+    animation-delay: 2s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 2.5s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 3s;
+}
+h1 span:nth-child(5) {
+    animation-delay: 3.5s;
+}
+h1 span:nth-child(6) {
+    animation-delay: 4s;
+}
+h1 span:nth-child(7) {
+    animation-delay: 4.5s;
+}
+h1 span:nth-child(8) {
+    animation-delay: 5s;
+}
+h1 span:nth-child(9) {
+    animation-delay: 5.5s;
+}
+h1 span:nth-child(10) {
+    animation-delay: 5.5s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* .navLeft-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(156, 98, 237), rgb(232, 131, 209), rgb(131, 164, 219), #0ff);
+    mix-blend-mode: color;
+    pointer-events: none;
+
+} */
+
+.full-nav {
+    justify-content: space-between;
+}
+
+
+
+.navRight {
+
+    font-family: 'Circular Std Book', sans-serif;
+    cursor: pointer;
+    
+
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.3em;
+    gap: 40px;
+    color: white;
+    display: flex;
+    margin-top: 18px;
+}
+
+.slogan-container {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 12%;
+}
+
+.slogan {
+    margin-left: -25px;
+}
+
+.slogan, .slogan1 {
+    margin-top: 30px;
+    line-height: 70px;
+    font-family: 'Mark Pro', sans-serif;
+    font-size: 5rem;
+    letter-spacing: -.03em;
+    color: white;
+
+}
+
+
+#solution-text {
+    font-size: 5rem;
+    font-family: 'Mark Pro', sans-serif;
+    background: linear-gradient(90deg, #e9b2e8, rgb(227, 133, 208), rgb(206, 181, 229), pink, lightpink, rgb(177, 154, 212), rgb(204, 153, 204), rgb(149, 246, 222));
+    background-size: 400%;
+    animation: animate 10s linear infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+@keyframes animate {
+    0% {
+        background-position: 0%
+    }
+    100% {
+        background-position: 400%
+    }
+}
+
+
+.card-container1 {
+    margin-left: 100px;
+    border-radius: 2rem;
+    border: 0.2rem solid #2a2b37;
+    margin-top: 100px;
+    font-family: 'Circular Std Book', sans-serif;
+    /* font-family: 'Mark Pro', sans-serif; */
+    width: 1000px;
+    height: 400px;
+    color: white;
+}
+
+
+.ab-card-farLeft {
+    padding-left: 20px;
+    writing-mode: vertical-lr;
+    font-size: 3.8em;
+    justify-content: center;
+
+}
+
+
+#cardTitle {
+    margin-right: 15px;
+    font-family: 'Mark Pro', sans-serif;
+    background: linear-gradient(90deg, #e9b2e8, rgb(227, 133, 208), rgb(206, 181, 229), pink, lightpink, rgb(177, 154, 212), rgb(204, 153, 204), rgb(149, 246, 222));
+    background-size: 400%;
+    animation: animate 10s linear infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+@keyframes animate {
+    0% {
+        background-position: 0%
+    }
+    100% {
+        background-position: 400%
+    }
+}
+
+
+
+#garyImg {
+    margin-left: 30px;
+    margin: 45px;
+    border-radius: 2rem;
+    border: 0.2rem solid #2a2b37;
+    height: 300px;
+}
+.about-right, .edu-right {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 45px;
+    line-height: 25px;
+}
+
+.about-farRight {
+    margin-right: 30px;
+    color: #6bc5f8;
+    font-family: 'Mark Pro', sans-serif;
+}
+
+.card-container2 {
+    margin-left: 550px;
+    border-radius: 2rem;
+    border: 0.2rem solid #2a2b37;
+    margin-top: 100px;
+    font-family: 'Circular Std Book', sans-serif;
+    /* font-family: 'Mark Pro', sans-serif; */
+    width: 1000px;
+    height: 400px;
+    color: white;
+}
+
+.DojoImg {
+    height: 250px;
+    margin-left: 40px;
+    margin-top: 80px;
+    border-radius: 20%;
+}
+
+
+
+.skills-card {
+    padding-top: 30px;
+}
+
+#language-icon {
+    margin-left: 40px;
+    width: 400px;
+}
+
+#jquery-icon {
+    margin-left: 70px;
+    width: 300px;
+}
+
+
