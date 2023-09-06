@@ -11,8 +11,9 @@
 body {
     background-color: black;
     /* font-family: 'Circular Std Book', sans-serif; */
-    
+
 }
+
 .flexed {
     display: flex;
 }
@@ -27,11 +28,12 @@ body {
     margin: 0 auto;
     width: 1000px;
     margin-top: 10px;
-    
+
 }
-    /* width: 100%; */
-    /* height: 100%; */
-    /* overflow: hidden;
+
+/* width: 100%; */
+/* height: 100%; */
+/* overflow: hidden;
 /* 
 .navbar-container {
     border-radius: 3rem;
@@ -43,7 +45,7 @@ body {
 .full-nav {
     height: 60px;
     /* padding: 20px; */
-    
+
 
 }
 
@@ -58,7 +60,7 @@ h1 {
     letter-spacing: .1em;
     color: #fff;
 
-    
+
 }
 
 
@@ -67,7 +69,6 @@ video {
     object-fit: cover;
     width: 100%;
     height: 60px;
-
 }
 
 
@@ -81,12 +82,14 @@ h1 span {
     cursor: pointer;
 
 }
+
 @keyframes smoke {
     0% {
         opacity: 0;
         transform: rotateY(90deg);
         filter: blur(10px);
-    } 
+    }
+
     100% {
         opacity: 1;
         transform: rotateY(0deg);
@@ -97,30 +100,39 @@ h1 span {
 h1 span:nth-child(1) {
     animation-delay: 1.5s;
 }
+
 h1 span:nth-child(2) {
     animation-delay: 2s;
 }
+
 h1 span:nth-child(3) {
     animation-delay: 2.5s;
 }
+
 h1 span:nth-child(4) {
     animation-delay: 3s;
 }
+
 h1 span:nth-child(5) {
     animation-delay: 3.5s;
 }
+
 h1 span:nth-child(6) {
     animation-delay: 4s;
 }
+
 h1 span:nth-child(7) {
     animation-delay: 4.5s;
 }
+
 h1 span:nth-child(8) {
     animation-delay: 5s;
 }
+
 h1 span:nth-child(9) {
     animation-delay: 5.5s;
 }
+
 h1 span:nth-child(10) {
     animation-delay: 5.5s;
 }
@@ -154,7 +166,7 @@ a {
 
     font-family: 'Circular Std Book', sans-serif;
     cursor: pointer;
-    
+
 
 }
 
@@ -177,7 +189,8 @@ ul {
     margin-left: -25px;
 }
 
-.slogan, .slogan1 {
+.slogan,
+.slogan1 {
     margin-top: 30px;
     line-height: 70px;
     font-family: 'Mark Pro', sans-serif;
@@ -196,12 +209,14 @@ ul {
     animation: animate 10s linear infinite;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    
+
 }
+
 @keyframes animate {
     0% {
         background-position: 0%
     }
+
     100% {
         background-position: 400%
     }
@@ -230,7 +245,7 @@ ul {
 }
 
 
-#cardTitle {
+.cardTitle {
     margin-right: 15px;
     font-family: 'Mark Pro', sans-serif;
     background: linear-gradient(90deg, #e9b2e8, rgb(227, 133, 208), rgb(206, 181, 229), pink, lightpink, rgb(177, 154, 212), rgb(204, 153, 204), rgb(149, 246, 222));
@@ -239,10 +254,25 @@ ul {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
+
+.cardTitleProject {
+    margin-left: 175px;
+    font-family: 'Mark Pro', sans-serif;
+    background: linear-gradient(90deg, #e9b2e8, rgb(227, 133, 208), rgb(206, 181, 229), pink, lightpink, rgb(177, 154, 212), rgb(204, 153, 204), rgb(149, 246, 222));
+    background-size: 400%;
+    animation: animate 10s linear infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
 @keyframes animate {
     0% {
         background-position: 0%
     }
+
     100% {
         background-position: 400%
     }
@@ -257,13 +287,17 @@ ul {
     border: 0.2rem solid #2a2b37;
     height: 300px;
 }
-.about-right, .edu-right {
+
+.about-right,
+.edu-right {
     font-family: 'Circular Std Book', sans-serif;
     font-size: 1.3em;
     text-align: center;
     margin: 45px;
     line-height: 25px;
 }
+
+
 
 .about-farRight {
     margin-right: 30px;
@@ -307,3 +341,13 @@ ul {
 }
 
 
+
+.allSquareLogo {
+    height: 200px;
+
+}
+
+.foreBearLogo {
+    height: 100px;
+    padding: 45px;
+}
