@@ -31,16 +31,6 @@ body {
 
 }
 
-/* width: 100%; */
-/* height: 100%; */
-/* overflow: hidden;
-/* 
-.navbar-container {
-    border-radius: 3rem;
-    border: 0.2rem solid #e52ac3;
-    height: 100px;
-    width: 300px;
-}  */
 
 .full-nav {
     height: 60px;
@@ -48,8 +38,6 @@ body {
 
 
 }
-
-
 
 
 h1 {
@@ -350,4 +338,58 @@ ul {
 .foreBearLogo {
     height: 100px;
     padding: 45px;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    font-family: 'Circular Std Book', sans-serif;
+    margin: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 2px solid #f2f2f2;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
