@@ -14,11 +14,11 @@ ScrollReveal({
     delay: 400
 });
 
-ScrollReveal().reveal('.card-container1', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.card-container1', { delay: 300, origin: 'right' });
 
-ScrollReveal().reveal('.card-container2', { delay: 600, origin: 'left' });
+ScrollReveal().reveal('.card-container2', { delay: 300, origin: 'left' });
 
-ScrollReveal().reveal('#skills', { delay: 700, origin: 'right' });
+ScrollReveal().reveal('#skills', { delay: 300, origin: 'right' });
 
 
 // modal function to open and close  //
@@ -50,4 +50,45 @@ $(document).ready(function () {
             modal.style.display = "none";
         }
     }
+});
+
+$(document).ready(function () {
+    // Get the modal
+    var modal = document.getElementById('contactModal');
+
+    // Get the button that opens the modal
+    var btn = document.querySelector('contact-btn');
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close-btn")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+
+$(document).ready(function () {
+    // Open the contact modal
+    $('#contactBtn').click(function (e) {
+        e.preventDefault();
+        $('#contactModal').show();
+    });
+
+    // Close the contact modal
+    $('.contact-close-btn').click(function () {
+        $('#contactModal').hide();
+    });
 });
