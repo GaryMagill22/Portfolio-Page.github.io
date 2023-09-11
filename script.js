@@ -1,33 +1,24 @@
 function setNewImg() {
-    document.getElementById("garyImg").src = "./Gary_Frankie2.png"
+    $('#garyImg').attr('src', './Gary_Frankie2.png');
 }
 
 function setOldImg() {
-    document.getElementById("garyImg").src = "./Gary Profile Page Pic.png"
+    $('#garyImg').attr('src', './Gary Profile Page Pic.png');
 }
 
-
-ScrollReveal({
-    reset: true,
-    distance: '100px',
-    duration: 1000,
-    delay: 400
-});
-
-ScrollReveal().reveal('.card-container1', { delay: 300, origin: 'right' });
-
-ScrollReveal().reveal('.card-container2', { delay: 300, origin: 'left' });
-
-ScrollReveal().reveal('#skills', { delay: 300, origin: 'right' });
-
-
-// modal function to open and close  //
 $(document).ready(function () {
-    // Modal elements
-    var modal = document.getElementById('modal');
-    var span = document.getElementsByClassName("close-btn")[0];
+    ScrollReveal({
+        reset: true,
+        distance: '100px',
+        duration: 1000,
+        delay: 400
+    });
 
-    // Open the modal
+    ScrollReveal().reveal('.card-container1', { delay: 300, origin: 'right' });
+    ScrollReveal().reveal('.card-container2', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('#skills', { delay: 300, origin: 'right' });
+
+    // Project modal handling
     $(".allSquareLogo, .foreBearLogo").click(function () {
         var projectDescription = "";
         if ($(this).hasClass('allSquareLogo')) {
@@ -36,51 +27,38 @@ $(document).ready(function () {
             projectDescription = "ForeBear is a clothing and lifestyle brand inspired by golf. We transform golf wear classics with a modern streetwear twist, combining comfort, design and personal style so you look and feel great wherever life takes you.";
         }
         $('#modal-description').text(projectDescription);
-        modal.style.display = "block";
+        $('#modal').show();
     });
 
-    // Close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
+    $(".close-btn").click(function () {
+        $(this).closest('.modal').hide();
+    });
 
-    // Close the modal if user clicks outside
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+    $(window).click(function (event) {
+        if ($(event.target).hasClass('modal')) {
+            $(event.target).hide();
         }
-    }
-});
+    });
 
-$(document).ready(function () {
-    // Get the modal
-    var modal = document.getElementById('contactModal');
+    // Contact modal handling
+    var modal = $('#contactModal');
+    var btn = $('#contact-btn');
+    var span = $(".close-btn").first();
 
-    // Get the button that opens the modal
-    var btn = document.querySelector('contact-btn');
+    btn.click(function () {
+        modal.show();
+    });
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close-btn")[0];
+    span.click(function () {
+        modal.hide();
+    });
 
-    // When the user clicks the button, open the modal
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+    $(window).click(function (event) {
+        if ($(event.target).is(modal)) {
+            modal.hide();
         }
-    }
-});
+    });
 
-$(document).ready(function () {
     // Open the contact modal
     $('#contactBtn').click(function (e) {
         e.preventDefault();
@@ -91,4 +69,47 @@ $(document).ready(function () {
     $('.contact-close-btn').click(function () {
         $('#contactModal').hide();
     });
+
+
+    // Skills Modals //
+
+    $(document).ready(function () {
+        // Opening the modals
+        $('.language').click(function () {
+            $('#languagesModal').show();
+        });
+
+        $('.libraries').click(function () {
+            $('#librariesModal').show();
+        });
+
+        $('.databases').click(function () {
+            $('#databaseModal').show();
+        });
+
+        $('.frameworks').click(function () {
+            $('#frameworksModal').show();
+        });
+        $('.devTools').click(function () {
+            $('#devToolsModal').show();
+        });
+
+
+
+        // Closing the modals
+        $('.skills-modal-content').click(function (event) {
+            event.stopPropagation(); // This prevents the modal from closing when the content is clicked
+        });
+
+        $('.skills-modal').click(function () {
+            $(this).hide(); // Hide the modal when anywhere outside the modal content is clicked
+        });
+    });
+
+
+
+
+
+
+
 });

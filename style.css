@@ -285,7 +285,13 @@ ul {
     line-height: 25px;
 }
 
-
+.edu-right1 {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 30px;
+    line-height: 25px;
+}
 
 .about-farRight {
     margin-right: 30px;
@@ -316,6 +322,7 @@ ul {
 
 .skills-card {
     padding-top: 30px;
+    margin: 20px;
 }
 
 #language-icon {
@@ -442,4 +449,35 @@ html {
     font-size: 1.3em;
     color: black;
     margin-top: 20px;
+}
+
+
+
+/* ================  modal for languages ================ */
+
+.skills-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.skills-modal-content {
+    background-color: #000000;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin: 20px;
+    text-decoration: none;
 }

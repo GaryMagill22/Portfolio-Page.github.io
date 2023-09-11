@@ -17,7 +17,7 @@
         <div class="navbar-container">
             <div class="full-nav flexed">
                 <div class="navLeft-container">
-                    <video src="./smoke.mp4" alt="smoke video" autoplay muted></video>
+                    <video src="./smoke.mp4" alt="smoke video" autoplay muted loop></video>
 
                     <h1>
                         <span>G</span>
@@ -88,49 +88,65 @@
                 <a><img class="DojoImg" src="./Coding_Dojo_Img.png" alt="Coding Dojo Logo"></a>
             </div>
             <div class="card-right">
-                <p class="edu-right">After thorough research, I made a decision to join an immersive coding bootcamp
-                    at
-                    Coding Dojo. Coding Dojo's comprehensive curriculum covers multiple coding languages and stacks,
-                    including front-end, back-end, and full-stack development. Programming languages I learned
-                    include
-                    Python, JavaScript and C#. In addition to programming languages, I learned alot about frameworks
-                    and
-                    tools such as Node.js, React, Django and Angular as well as databases such as SQL and NoSQL. At
-                    the
-                    end of the 16 weeks I will have experience in three full technology stacks such as: the MERN
-                    stack
-                    (MongoDB, Express, React, and Node.js), and the Java stack.</p>
+                <p class="edu-right1">After careful consideration, I enrolled in the intensive coding bootcamp at Coding
+                    Dojo. Throughout this rigorous program, I became proficient in multiple programming languages,
+                    including Python, JavaScript, and Java. My skill set expanded to include various frameworks and
+                    tools
+                    such as Node.js, React, Flask, Django, JQuery, and JavaSpring. I also deepened my understanding of
+                    databases,
+                    mastering both MySQL and NoSQL. Over the 16-week period, I became well-versed in three major
+                    technology stacks, the MERN stack (MongoDB, Express, React, and Node.js), Java
+                    stack (Java-Spring Boot-MySQL) and Python stack (Django, MySQL, Ajax). This immersive experience has
+                    equipped me with a robust set of skills, enabling me to tackle diverse software development
+                    challenges.
 
             </div>
             <div class="ab-card-farLeft flexed">
                 <p class="cardTitle">Education</p>
             </div>
         </div>
+
+
         <div id="skills" class="card-container1 flexed">
             <div class="ab-card-farLeft flexed">
                 <p class="cardTitle">Skills</p>
             </div>
             <div class="skills-card flexed">
-                <a><img id="language-icon" src="./HTMLCSSJS.png" alt="html,js,css icons"></a>
-                <a><img id="jquery-icon" src="./52450.png" alt="jquery icon"></a>
-            </div>
-            <div class="card-right flexed">
-                <p class="about-right"></p>
+                <div style="cursor:pointer;">
+                    <h3 class="language">Languages</h3>
+                </div>
+                <div style="cursor:pointer;">
+                    <h3 class="libraries">Front End Libraries</h3>
+                </div>
+                <div style="cursor:pointer;">
+                    <h3 class="frameworks">Frameworks</h3>
+                </div>
+                <div style="cursor:pointer;">
+                    <h3 class="devTools">Developer Tools</h3>
+                </div>
+                <div style="cursor:pointer;">
+                    <h3 class="databases">Database</h3>
+                </div>
             </div>
         </div>
-        <div id="projects" class="card-container2 flexed">
-            <div class="card-middle">
-                <a><img class="allSquareLogo" src="./All_square_logo_transparent_background.png"
-                        alt="All Square Logo"></a>
-            </div>
-            <div>
-                <a><img class="foreBearLogo" src="./Forebear white full logo centered 2.png" alt="ForeBear Logo"></a>
-            </div>
-            <div class="ab-card-farLeft flexed">
-                <p class="cardTitleProject">Projects</p>
-            </div>
+
+    </div>
+
+    <!--       MODALS SECTION         -->
+
+    <div id="projects" class="card-container2 flexed">
+        <div id="allSquareLogoDiv" class="card-middle">
+            <a><img class="allSquareLogo" src="./All_square_logo_transparent_background.png" alt="All Square Logo"></a>
+        </div>
+        <div>
+            <a><img class="foreBearLogo" src="./Forebear white full logo centered 2.png" alt="ForeBear Logo"></a>
+        </div>
+        <div class="ab-card-farLeft flexed">
+            <p class="cardTitleProject">Projects</p>
         </div>
     </div>
+    </div>
+
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -138,6 +154,7 @@
             <p id="modal-description"></p>
         </div>
     </div>
+
     <div id="contactModal" class="contact-modal">
         <div class="contact-modal-content">
             <span class="contact-close-btn">&times;</span>
@@ -145,9 +162,50 @@
             <p class="contactInfoTitles">Email: garmagill22@gmail.com</p>
             <a id="linkedInLink" href="https://www.linkedin.com/in/gary-magill-515629a0/">LinkedIn</a><br>
             <a id="linkedInLink" href="https://github.com/GaryMagill22">GitHub</a>
-            <p>Phone: 610-945-4279</p>
         </div>
     </div>
+    <!-- Modal for Languages -->
+    <div id="languagesModal" class="skills-modal">
+        <div class="skills-modal-content">
+            <span class="skills-close-btn">&times;</span>
+            <h2>Languages</h2>
+            <p>Your languages skills information goes here.</p>
+        </div>
+    </div>
+
+    <!-- Modal for Front End Libraries -->
+    <div id="librariesModal" class="skills-modal">
+        <div class="skills-modal-content">
+            <span class="skills-close-btn">&times;</span>
+            <h2>Front End Libraries</h2>
+            <p>Your front end libraries skills information goes here.</p>
+        </div>
+    </div>
+    <!-- Modal for Frameworks -->
+    <div id="frameworksModal" class="skills-modal">
+        <div class="skills-modal-content">
+            <span class="skills-close-btn">&times;</span>
+            <h2>Frameworks</h2>
+            <p>Your framework skills information goes here.</p>
+        </div>
+    </div>
+    <!-- Modal for Devloper Tools -->
+    <div id="devToolsModal" class="skills-modal">
+        <div class="skills-modal-content">
+            <span class="skills-close-btn">&times;</span>
+            <h2>Developer Tools</h2>
+            <p>Your Developer Tools skills information goes here.</p>
+        </div>
+    </div>
+    <!-- Modal for Database -->
+    <div id="databaseModal" class="skills-modal">
+        <div class="skills-modal-content">
+            <span class="skills-close-btn">&times;</span>
+            <h2>Database</h2>
+            <p>Your database skills information goes here.</p>
+        </div>
+    </div>
+
 
 
 
