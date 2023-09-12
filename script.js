@@ -21,15 +21,13 @@ $(document).ready(function () {
     // Project modal handling
     $(".allSquareLogo, .foreBearLogo").click(function () {
         var projectDescription = "";
-        var cardTitle = "";
+
         if ($(this).hasClass('allSquareLogo')) {
-            cardTitle = "All Square";
+
             projectDescription = "I developed an innovative MERN-stack golf application designed to infuse the passion of the sport with a touch of friendly competition. This app reinvents post-round dynamics, allowing golf enthusiasts to place friendly wagers on their games. Upon completion of a round, our system immediately recognizes and compensates the winner via Stripe, emphasizing the spirit of the sport and minimizing disputes. Through meticulous UX design, we achieved a streamlined single-page application, built on React's component-based architecture, ensuring both aesthetic appeal and optimal performance. On the server-side, Node.js plays a pivotal role, offering rapid data processing and swift user request responses. Moreover, the integration of Golf Course APIs provides users with invaluable course data, assisting in maintaining balanced and competitive games. The app boasts real-time features powered by Socket.io, permitting users to join games, place bets, and receive live score updates simultaneously. This, combined with MongoDB's intricate data models, allows for sophisticated operations and queries on user profiles, betting histories, and detailed game data. With React's modern capabilities, I adeptly employed Hooks and the Context API, paving the way for efficient state management and bolstered application performance.";
         } else if ($(this).hasClass('foreBearLogo')) {
-            cardTitle = "ForeBear";
             projectDescription = "ForeBear is a clothing and lifestyle brand inspired by golf. We transform golf wear classics with a modern streetwear twist, combining comfort, design and personal style so you look and feel great wherever life takes you.";
         }
-        $('#modal-title').text(cardTitle);
         $('#modal-description').text(projectDescription);
         $('#modal').show();
     });
