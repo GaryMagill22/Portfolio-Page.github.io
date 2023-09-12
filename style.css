@@ -502,3 +502,7 @@ hr {
     margin: 20px 0;
     /* Gives it some spacing from content above and below */
 }
+
+.blue {
+    color: #2fadf5;
+}
