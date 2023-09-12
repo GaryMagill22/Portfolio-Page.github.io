@@ -10,8 +10,6 @@
 
 body {
     background-color: black;
-    /* font-family: 'Circular Std Book', sans-serif; */
-
 }
 
 .flexed {
@@ -36,7 +34,6 @@ body {
     height: 60px;
     /* padding: 20px; */
 
-
 }
 
 
@@ -47,8 +44,6 @@ h1 {
     width: 100%;
     letter-spacing: .1em;
     color: #fff;
-
-
 }
 
 
@@ -142,8 +137,6 @@ a {
 
     font-family: 'Circular Std Book', sans-serif;
     cursor: pointer;
-
-
 }
 
 ul {
