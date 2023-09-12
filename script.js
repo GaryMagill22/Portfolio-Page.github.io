@@ -21,11 +21,15 @@ $(document).ready(function () {
     // Project modal handling
     $(".allSquareLogo, .foreBearLogo").click(function () {
         var projectDescription = "";
+        var cardTitle = "";
         if ($(this).hasClass('allSquareLogo')) {
+            cardTitle = "All Square";
             projectDescription = "MERN based application meticulously crafted to redefine golf's post-round dynamics. The app's central ethos is simplicity and fairness: upon game completion, winners are instantly recognized, ensuring that camaraderie thrives, while disputes take a back seat. A top priority was placed on User Experience (UX), leading to the development of a single-page application using React.js. Its component-based architecture guarantees a streamlined and efficient user interface.";
         } else if ($(this).hasClass('foreBearLogo')) {
+            cardTitle = "ForeBear";
             projectDescription = "ForeBear is a clothing and lifestyle brand inspired by golf. We transform golf wear classics with a modern streetwear twist, combining comfort, design and personal style so you look and feel great wherever life takes you.";
         }
+        $('#modal-title').text(cardTitle);
         $('#modal-description').text(projectDescription);
         $('#modal').show();
     });
@@ -105,11 +109,5 @@ $(document).ready(function () {
             $(this).hide(); // Hide the modal when anywhere outside the modal content is clicked
         });
     });
-
-
-
-
-
-
 
 });

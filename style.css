@@ -131,18 +131,6 @@ a {
 }
 
 
-/* .navLeft-container:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgb(156, 98, 237), rgb(232, 131, 209), rgb(131, 164, 219), #0ff);
-    mix-blend-mode: color;
-    pointer-events: none;
-
-} */
 
 .full-nav {
     justify-content: space-between;
@@ -467,6 +455,7 @@ html {
 }
 
 .skills-modal-content {
+    border: 1px solid rgb(35, 223, 229);
     background-color: #000000;
     color: white;
     position: absolute;
@@ -475,9 +464,32 @@ html {
     transform: translate(-50%, -50%);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h3 {
     margin: 20px;
     text-decoration: none;
+}
+
+
+.skills-info {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 30px;
+    line-height: 25px;
+}
+
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    margin: 20px;
+    width: 100%;
+}
+
+#modal-description {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.2em;
 }
