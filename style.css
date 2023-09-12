@@ -493,3 +493,12 @@ h3 {
     font-family: 'Circular Std Book', sans-serif;
     font-size: 1.2em;
 }
+
+hr {
+    border: none;
+    /* Removes the default border */
+    border-top: 1px solid #ddd;
+    /* Creates a new border on top, you can adjust color and size */
+    margin: 20px 0;
+    /* Gives it some spacing from content above and below */
+}
