@@ -404,7 +404,9 @@ html {
 }
 
 .contact-modal-content {
-    background-color: #fefefe;
+    font-family: 'Mark Pro', sans-serif;
+    color: white;
+    background-color: rgb(35, 32, 35);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -425,19 +427,16 @@ html {
     cursor: pointer;
 }
 
-#linkedInLink {
+.contactInfoTitles,
+.linkedInLink {
     font-family: 'Mark Pro', sans-serif;
     font-size: 1.3em;
-    color: blue;
+    color: #2fadf5;
+    margin-top: 20px;
+
     /* text-decoration: none; */
 }
 
-.contactInfoTitles {
-    font-family: 'Mark Pro', sans-serif;
-    font-size: 1.3em;
-    color: black;
-    margin-top: 20px;
-}
 
 
 
