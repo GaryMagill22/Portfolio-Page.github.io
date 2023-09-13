@@ -9,7 +9,7 @@ function setOldImg() {
 $(document).ready(function () {
     ScrollReveal({
         reset: true,
-        distance: '100px',
+        distance: '300px',
         duration: 1000,
         delay: 400
     });
@@ -17,6 +17,7 @@ $(document).ready(function () {
     ScrollReveal().reveal('.card-container1', { delay: 300, origin: 'right' });
     ScrollReveal().reveal('.card-container2', { delay: 300, origin: 'left' });
     ScrollReveal().reveal('#skills', { delay: 300, origin: 'right' });
+    ScrollReveal().reveal('#projects', { delay: 300, origin: 'left' });
 
     // Project modal handling
     $(".allSquareLogo, .foreBearLogo").click(function () {
@@ -29,7 +30,7 @@ $(document).ready(function () {
 
         } else if ($(this).hasClass('foreBearLogo')) {
             projectTitle = 'ForeBear';
-            projectDescription = "ForeBear is a clothing and lifestyle brand inspired by golf. We transform golf wear classics with a modern streetwear twist, combining comfort, design and personal style so you look and feel great wherever life takes you.";
+            projectDescription = "ForeBear is a clothing and lifestyle brand inspired by golf. We transform golf wear classics with a modern streetwear twist, combining comfort, design and personal style so you look and feel great on and off the course.";
         }
         $('#allsquareTitle').text(projectTitle);
         $('#modal-description').text(projectDescription);
@@ -113,3 +114,16 @@ $(document).ready(function () {
     });
 
 });
+
+
+anime({
+    targets: 'svg path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 9000,
+    delay: function (el, i) { return i * 500 },
+    direction: 'alternate',
+    loop: true
+});
+
+

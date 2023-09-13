@@ -226,7 +226,7 @@ ul {
 
 
 .cardTitleProject {
-    margin-left: 175px;
+    margin-left: 275px;
     font-family: 'Mark Pro', sans-serif;
     background: linear-gradient(90deg, #e9b2e8, rgb(227, 133, 208), rgb(206, 181, 229), pink, lightpink, rgb(177, 154, 212), rgb(204, 153, 204), rgb(149, 246, 222));
     background-size: 400%;
@@ -320,13 +320,10 @@ ul {
 
 .allSquareLogo {
     height: 200px;
+    margin-top: 10px;
 
 }
 
-.foreBearLogo {
-    height: 100px;
-    padding: 45px;
-}
 
 
 /* Modal Styles */
@@ -495,6 +492,17 @@ hr {
     /* Gives it some spacing from content above and below */
 }
 
+
+
+#layer_1 {
+    width: 250px;
+    stroke: #ffffff;
+    stroke-width: 4px;
+    margin-bottom: 20px;
+}
+
+
+/* FOR SKILLS LIST - IN BLUE */
 .blue {
     color: #2fadf5;
 }
