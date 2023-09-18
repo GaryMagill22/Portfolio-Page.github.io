@@ -113,8 +113,11 @@ $(document).ready(function () {
         });
     });
 
-});
 
+
+
+
+});
 
 anime({
     targets: 'svg path',
@@ -125,5 +128,6 @@ anime({
     direction: 'alternate',
     loop: true
 });
+
 
 
