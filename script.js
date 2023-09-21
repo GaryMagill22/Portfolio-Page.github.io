@@ -29,8 +29,10 @@ $(document).ready(function () {
             $('#forebearTitle').text(projectTitle);
 
         } else if ($(this).hasClass('foreBearLogo')) {
+            console.log("ForeBear logo clicked!");
             projectTitle = 'ForeBear';
-            projectDescription = "ForeBear is a clothing and lifestyle brand inspired by golf. We transform golf wear classics with a modern streetwear twist, combining comfort, design and personal style so you look and feel great on and off the course.";
+            projectDescription = "ForeBear is a golf-inspired clothing and lifestyle brand, breathing a fresh streetwear essence into timeless golf wear staples. Born from my profound appreciation for the distinct charm of golf, I didn't embark on this journey as a traditional designer, but as an enthusiast seeking to address a void I recognized in the market. Merging comfort, contemporary design, and individual style, ForeBear delivers an elevated casual wardrobe, designed not only for the greens but also for the dynamic rhythm of daily life beyond the course.";
+
         }
         $('#allsquareTitle').text(projectTitle);
         $('#modal-description').text(projectDescription);
