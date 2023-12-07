@@ -19,8 +19,23 @@ $(document).ready(function () {
     ScrollReveal().reveal('#skills', { delay: 300, origin: 'right' });
     ScrollReveal().reveal('#projects', { delay: 300, origin: 'left' });
 
+    // ===================================================================================================== //
 
     // project slides for All Square
+
+    // Define your slide descriptions in the global scope
+    const slideDescriptions = [
+        "Experience the convenience of our golf betting app's dashboard. Designed for golf enthusiasts seeking friendly competition, our app allows you to bet and engage in popular golf games with ease. Our streamlined scorecard eliminates any scoring confusion, and when your golfing session ends, and everyone has signed the scorecard, our app handles the payouts seamlessly, letting you focus on enjoying your time on the course.",
+        "Welcome to the All Square home screen, the command center for your golfing journey. The vertical navbar stands prominently, offering quick access to various app sections. It's your compass through the All Square universe. At the top, you'll find our distinctive All Square logo, a testament to our commitment to excellence in design. This is where your golfing adventures begin, where you can initiate new rounds, create lobbies, or join games using lobby codes. Simply choose your desired game, specify your course, and let the golfing fun begin.",
+        "This page serves as a comprehensive catalog of all the golf games available in our database. It's not just a list; it's an interactive repository of golfing possibilities. Each game is neatly organized within accordions, waiting for you to unfold the excitement. When you click on an accordion, it unveils an intricate description of how the game is played, including the rules, strategies, and the fun twists that make each game unique. Additionally, you'll find information on the minimum number of players required to enjoy the game to its fullest and how the scoring works, ensuring you're well-prepared for a thrilling golfing experience.",
+        "Welcome to the individual style scorecard page. All lobby players effortlessly load into the scorecard, receiving real-time updates on their devices, keeping everyone engaged. The lobby creator has full control, while spectators have buttons disabled to prevent interference. The top left displays the game name, and the top right shows the hole number. After each hole, the scorecard updates with points and scores. At the bottom, you'll see the betting amount, ensuring everyone knows the stakes.",
+        "Your dedicated profile hub,where your golfing identity takes center stage. Your username is proudly displayed at the top, accompanied by your handicap, providing a snapshot of your golfing skills. Stay on top of your finances with your digital wallet balance showcased prominently, giving you the flexibility to add more funds for future bets or cash out your winnings. The logout option is readily available for your convenience. The top navbar offers easy access to different app sections, ensuring you can seamlessly explore all the app has to offer.",
+        "This is where your golfing journey unfolds—on the page dedicated to your past rounds. Each round is thoughtfully categorized by date, game, and the course played. With a single click, you can delve deeper into each round, revealing the victorious player and their winnings. Additionally, you'll find a detailed scorecard showcasing your total points and score.",
+        "As the golf game concludes, you'll be directed to a page that presents the round totals. Here, you'll find a comprehensive summary of each player's or team's total score and points, ensuring transparency and fairness. To maintain integrity, everyone must 'sign the scorecard.' Once all participants have provided their digital signatures, the winnings are automatically transferred to the victors' digital wallets. Additionally, you have the option to save the round for future reference, allowing you to revisit your golfing triumphs or learn from your experiences.",
+        "This is the page that offers a glimpse into the world of team games. You have the opportunity to craft a team identity by selecting a team name and adding your players. Just like the individual scorecard, the team scorecard is managed by the lobby creator, ensuring uniformity in gameplay. All players can enjoy real-time score and hole updates, enhancing the competitive spirit. When your game concludes, your round is saved, capturing the team names you've chosen for posterity. A quick scroll to the bottom serves as a reminder of the betting amount, ensuring everyone is aware of what's on the line.",
+        // ... and so on for each slide
+    ];
+
     // Global scope functions for slide controls
     function plusSlides(n) {
         showSlides(slideIndex += n);
@@ -36,6 +51,12 @@ $(document).ready(function () {
     function showSlides(n) {
         let slides = document.getElementsByClassName("mySlides");
         let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1; } // Wrap back to the first slide
+        if (n < 1) { slideIndex = slides.length; } // Wrap to the last slide
+
+
+        // Update the slide description
+        document.getElementById("slide-description").innerText = slideDescriptions[slideIndex - 1];
 
         if (n > slides.length) {
             slideIndex = 1; // Wrap back to the first slide
@@ -44,13 +65,13 @@ $(document).ready(function () {
         }
 
         // Hide all slides
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        for (let slide of slides) {
+            slide.style.display = "none";
         }
 
         // Remove 'active' class from all dots
-        for (let i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+        for (let dot of dots) {
+            dot.className = dot.className.replace(" active", "");
         }
 
         // Show the active slide and highlight the active dot
@@ -61,6 +82,11 @@ $(document).ready(function () {
         if (dots[slideIndex - 1]) {
             dots[slideIndex - 1].className += " active";
         }
+
+        // Update the slide description
+        let textContainer = document.getElementById("slide-description");
+        textContainer.innerText = slideDescriptions[slideIndex - 1];
+
     }
 
     // Document ready function
@@ -84,9 +110,10 @@ $(document).ready(function () {
             });
         });
 
-        // ... rest of your jQuery ready code
     });
 
+
+   
 
 
 

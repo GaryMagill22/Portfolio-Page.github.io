@@ -646,3 +646,31 @@ a {
 .allsquaretext p {
     font-family: 'Mark Pro', sans-serif;
 }
+
+.description-container {
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 370px;
+    display: flex;
+    width: 500px;
+    font-family: Mark Pro, sans-serif;
+    font-size: 1.1rem;
+}
+
+
+.forebearLogo {
+    padding-top: 120px;
+    position: relative;
+}
+
+.foreBearDescription-container {
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 420px;
+    width: 500px;
+    font-family: Mark Pro, sans-serif;
+    font-size: 1.1rem;
+}
