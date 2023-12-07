@@ -3,7 +3,7 @@ function setNewImg() {
 }
 
 function setOldImg() {
-    $('#garyImg').attr('src', './Gary Profile Page Pic.png');
+    $('#garyImg').attr('src', './Gary_Profile_Page_Pic.png');
 }
 
 $(document).ready(function () {
@@ -18,6 +18,79 @@ $(document).ready(function () {
     ScrollReveal().reveal('.card-container2', { delay: 300, origin: 'left' });
     ScrollReveal().reveal('#skills', { delay: 300, origin: 'right' });
     ScrollReveal().reveal('#projects', { delay: 300, origin: 'left' });
+
+
+    // project slides for All Square
+    // Global scope functions for slide controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    // Declare slideIndex in the global scope to ensure it's accessible by all functions
+    let slideIndex = 1; // Initialize slideIndex to 1 to start from the first slide
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {
+            slideIndex = 1; // Wrap back to the first slide
+        } else if (n < 1) {
+            slideIndex = slides.length; // Wrap to the last slide
+        }
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        // Remove 'active' class from all dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        // Show the active slide and highlight the active dot
+        // Checking if the elements exist before trying to change style or class
+        if (slides[slideIndex - 1]) {
+            slides[slideIndex - 1].style.display = "block";
+        }
+        if (dots[slideIndex - 1]) {
+            dots[slideIndex - 1].className += " active";
+        }
+    }
+
+    // Document ready function
+    $(document).ready(function () {
+        // You should call showSlides here to initialize the slideshow when the document is ready
+        showSlides(slideIndex);
+
+        // Event handlers for next/prev buttons
+        $('.prev').click(function () {
+            plusSlides(-1);
+        });
+
+        $('.next').click(function () {
+            plusSlides(1);
+        });
+
+        // Event handlers for dots
+        $('.dot').each(function (index) {
+            $(this).click(function () {
+                currentSlide(index + 1);
+            });
+        });
+
+        // ... rest of your jQuery ready code
+    });
+
+
+
+
+
 
     // Project modal handling
     $(".allSquareLogo, .foreBearLogo").click(function () {
