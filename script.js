@@ -115,9 +115,6 @@ $(document).ready(function () {
 
 
 
-
-
-
     // Project modal handling
     $(".allSquareLogo, .foreBearLogo").click(function () {
         var projectDescription = "";
